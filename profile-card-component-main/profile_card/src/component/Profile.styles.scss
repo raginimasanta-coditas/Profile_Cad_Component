@@ -1,0 +1,45 @@
+*body {
+    background-color: hsl(185, 75%, 39%);
+  // background-image: url("../assets/bg-pattern-card.svg");
+  justify-content: center;
+  
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  
+  div{
+    margin: auto;
+  }
+}
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  margin: 10% auto;
+}
+
+.card_top {
+  text-align: center;
+  
+}
+.card_bottom {
+  text-align: center;
+}
+.dash{
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+    width:200px;
+    margin-top: 23px;
+}
+.heading{
+    color:black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.subheading{
+    color: hsl(0, 0%, 59%);
+    font-weight: 200;
+    font-size: 8px;
+}
