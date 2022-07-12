@@ -15,23 +15,27 @@ class Profile extends React.Component {
   render() {
     return (
       <div>
-        <div></div>
+        
         <div className="card">
-          <div className="card_top"></div>
-          <div>
+          {/* <div className="card_top"><img style={{width:"200px",height:"100px", border:"2px solid  black"}} src={{CardTop}}></img></div> */}
+          <div className="card_top" style={{width:"200px",height:"30%",backgroundImage: `url(${CardTop})`, borderRadius: "20px 20px 0px 0px"}}></div>
+          <div srtyle={{margin:"10px"}}>
             <img
               style={{
                 borderRadius: "50%",
                 padding: "10px",
                 width: "80px",
                 height: "80px",
+                marginTop:"-50px"
               }}
               src={Picture}
             ></img>
           </div>
           <div>
             <span className="heading">Victor Crest</span>
-            <span className="subheading">26</span>
+            <span className="subheading" style={{ fontSize: "18px",fontWeight:"400", padding:"8px"}}>
+              26
+            </span>
           </div>
           <div className="dash"></div>
 
@@ -53,7 +57,7 @@ class Profile extends React.Component {
             </div>
           </div>
         </div>
-        <div></div>
+       
       </div>
     );
   }
