@@ -1,46 +1,81 @@
-*body {
-    background-color: hsl(185, 75%, 39%);
-  // background-image: url("../assets/bg-pattern-card.svg");
+.main-section {
+  height: 90vh;
+  display: flex;
   justify-content: center;
-  
+  align-items: center;
+  overflow: hidden;
+}
+.image-left {
+  height: 978px;
+  width: 978px;
+  position: absolute;
+  top: -521px;
+  left: -397px;
+  background-repeat: no-repeat;
+}
+.image-right {
+  height: 978px;
+  width: 978px;
+  position: absolute;
+  bottom: -525px;
+  right: -374px;
+  background-repeat: no-repeat;
 }
 .flex-container {
   display: flex;
   flex-direction: row;
-  
-  div{
+  padding: 6%;
+  div {
     margin: auto;
   }
 }
 .card {
-  width: 200px;
-  height: 200px;
+  z-index: 10;
+  width: 300px;
+  height: 350px;
   border-radius: 20px;
   background-color: antiquewhite;
-  margin: 10% auto;
 }
 
 .card_top {
   text-align: center;
-  
-  
+  width: 300px;
+  height: 38%;
+  border-radius: 20px 20px 0px 0px;
 }
 .card_bottom {
   text-align: center;
 }
-.dash{
-    border-bottom: 1px solid hsl(0, 0%, 59%);
-    width:200px;
-    margin-top: 23px;
+.dash {
+  border-bottom: 1px solid hsl(0, 0%, 59%);
+  width: auto;
+  padding: 8%;
 }
-.heading{
-    color:black;
-    font-weight: 400;
-    font-size: 18px;
+.heading {
+  color: black;
+  font-weight: 400;
+  font-size: 24px;
 }
 
-.subheading{
-    color: hsl(0, 0%, 59%);
-    font-weight: 200;
+.subheading {
+  color: hsl(0, 0%, 59%);
+  font-weight: 200;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+  .card_top {
+    width: 200px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+
+  .subheading {
     font-size: 8px;
+  }
 }
