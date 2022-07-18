@@ -39,25 +39,11 @@ class Profile extends React.Component {
             }}
           ></div>
           <div>
-            <img
-              style={{
-                borderRadius: "50%",
-                padding: "10px",
-                width: "80px",
-                height: "80px",
-                marginTop: "-50px",
-              }}
-              src={Picture}
-            ></img>
+            <img className="profile-picture" src={Picture}></img>
           </div>
           <div>
             <span className="heading">Victor Crest</span>
-            <span
-              className="subheading"
-              style={{ fontSize: "18px", fontWeight: "400", padding: "8px" }}
-            >
-              26
-            </span>
+            <span className="age">26</span>
           </div>
           <div className="dash"></div>
           <div className="flex-container" style={{ display: "flex" }}>
