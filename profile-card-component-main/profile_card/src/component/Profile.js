@@ -17,27 +17,12 @@ class Profile extends React.Component {
     return (
       <div class="main-section">
         <div>
-          <div
-            style={{
-              backgroundImage: `url(${BackgroundTop})`,
-            }}
-            className="image-left"
-          ></div>
-          <div
-            style={{
-              backgroundImage: `url(${BackgroundBottom})`,
-            }}
-            className="image-right"
-          ></div>
+          <div className="image-left"></div>
+          <div className="image-right"></div>
         </div>
 
         <div className="card">
-          <div
-            className="card_top"
-            style={{
-              backgroundImage: `url(${CardTop})`,
-            }}
-          ></div>
+          <div className="card_top"></div>
           <div>
             <img className="profile-picture" src={Picture}></img>
           </div>
@@ -46,7 +31,7 @@ class Profile extends React.Component {
             <span className="age">26</span>
           </div>
           <div className="dash"></div>
-          <div className="flex-container" style={{ display: "flex" }}>
+          <div className="flex-container">
             <div>
               <div className="heading"> 80K</div>
 
